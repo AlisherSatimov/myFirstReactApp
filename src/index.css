@@ -1,13 +1,160 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+    text-decoration: none;
+    color: inherit;
 }
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* reset end */
+
+.wrapper {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* navigation start */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 30px;
+    font-size: 1rem;
+}
+
+.button {
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #0077c0;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* navigation end */
+
+/* header start */
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.recruit {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.recruit h1 {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.recruit p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.business_man {
+    width: 100%;
+    background: url(/src/images/vector.svg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+}
+
+.business_man img {
+    height: 600px;
+    margin-right: -45px;
+}
+
+/* header end */
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.partners img {
+    width: 200px;
+}
+
+/* the benefits start */
+
+.the_benefit {
+    background-color: #0077c0;
+    margin: 50px 0;
+}
+
+.the_benefit_title {
+    padding: 60px 0;
+}
+
+.the_benefit h5 {
+    text-align: center;
+    color: #fafafa;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.the_benefit h2 {
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: -0.222px;
+}
+
+.professional_fast img {
+    padding: 40px 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* the benefits end */
